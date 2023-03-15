@@ -11,9 +11,9 @@ export default function TheirMessage({message,lastMessage}) {
         src={message.attachments[0].file}
         alt="message-attachment"
         className='message-image'
-        style={{marginLeft: isFirstMessageByUser ? '4px' : '48px'}}
+        style={{marginRight: isFirstMessageByUser ? '4px' : '48px'}}
         
-        />):(     <div className='message' style={{float:'left', backgroundColor:'#CABCDC' , marginLeft: isFirstMessageByUser ? '4px' : '48px'}}>{message.text}</div>)}
+        />):(     <div className='message' style={{float:'left', backgroundColor:'#CABCDC' , marginRight: isFirstMessageByUser ? '4px' : '48px'}}>{message.text}</div>)}
     </div>
   )
 }
