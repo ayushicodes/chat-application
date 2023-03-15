@@ -13,7 +13,7 @@ export default function TheirMessage({message,lastMessage}) {
         className='message-image'
         style={{marginRight: isFirstMessageByUser ? '4px' : '48px'}}
         
-        />):(     <div className='message' style={{float:'left', backgroundColor:'#CABCDC' , marginRight: isFirstMessageByUser ? '4px' : '48px'}}>{message.text}</div>)}
+        />):(     <div className='message' style={{float:'right', backgroundColor:'#CABCDC' , marginRight: isFirstMessageByUser ? '4px' : '48px'}}>{message.text}</div>)}
     </div>
   )
 }
